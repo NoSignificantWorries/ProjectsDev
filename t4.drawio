@@ -1,0 +1,95 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
+  <diagram name="Page-1" id="P__qmiSkQz1bWESEa5Lm">
+    <mxGraphModel dx="783" dy="594" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CXYGANk-Z0LmwsJROQhh-2" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Обучающийся" vertex="1">
+          <mxGeometry height="175" width="140" x="30" y="252.5" as="geometry" />
+        </mxCell>
+        <mxCell id="CXYGANk-Z0LmwsJROQhh-3" parent="CXYGANk-Z0LmwsJROQhh-2" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;&lt;u&gt;Номер обучающегося&lt;/u&gt;&lt;/div&gt;ФИО&lt;div&gt;Номер телефона&lt;/div&gt;&lt;div&gt;email&lt;/div&gt;&lt;div&gt;Место работы&lt;/div&gt;&lt;div&gt;Должность&lt;/div&gt;&lt;div&gt;Дата регистрации&lt;/div&gt;" vertex="1">
+          <mxGeometry height="125" width="140" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CXYGANk-Z0LmwsJROQhh-4" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Курс" vertex="1">
+          <mxGeometry height="120" width="170" x="530" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="CXYGANk-Z0LmwsJROQhh-5" parent="CXYGANk-Z0LmwsJROQhh-4" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;&lt;u&gt;Номер курса&lt;/u&gt;&lt;/div&gt;Наименование&lt;div&gt;Описание&lt;/div&gt;&lt;div&gt;Продолжительность (часов)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="170" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CXYGANk-Z0LmwsJROQhh-6" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Группа" vertex="1">
+          <mxGeometry height="140" width="130" x="295" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="CXYGANk-Z0LmwsJROQhh-7" parent="CXYGANk-Z0LmwsJROQhh-6" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;&lt;u&gt;Номер группы&lt;/u&gt;&lt;/div&gt;&lt;div&gt;&lt;u&gt;Связь с курсом&lt;/u&gt;&lt;/div&gt;Начало обучения&lt;div&gt;Окончание обучения&lt;/div&gt;&lt;div&gt;&lt;u&gt;Список обучающихся&lt;/u&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="130" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CXYGANk-Z0LmwsJROQhh-8" edge="1" parent="1" source="CXYGANk-Z0LmwsJROQhh-4" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;" target="CXYGANk-Z0LmwsJROQhh-6" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="360" y="590" as="sourcePoint" />
+            <mxPoint x="530" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CXYGANk-Z0LmwsJROQhh-21" connectable="0" parent="CXYGANk-Z0LmwsJROQhh-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Зачислить" vertex="1">
+          <mxGeometry relative="1" x="0.2571" y="-2" as="geometry">
+            <mxPoint x="12" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CXYGANk-Z0LmwsJROQhh-10" edge="1" parent="1" source="CXYGANk-Z0LmwsJROQhh-6" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;rounded=0;" target="CXYGANk-Z0LmwsJROQhh-2" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="540" y="580" as="sourcePoint" />
+            <mxPoint x="640" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CXYGANk-Z0LmwsJROQhh-20" connectable="0" parent="CXYGANk-Z0LmwsJROQhh-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Записать" vertex="1">
+          <mxGeometry relative="1" x="0.3143" as="geometry">
+            <mxPoint x="17" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CXYGANk-Z0LmwsJROQhh-11" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Результат обучения" vertex="1">
+          <mxGeometry height="150" width="160" x="280" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="CXYGANk-Z0LmwsJROQhh-12" parent="CXYGANk-Z0LmwsJROQhh-11" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;u&gt;Номер отчёта&lt;/u&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;u&gt;Номер обучающегося&lt;/u&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;u&gt;Номер курса&lt;/u&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Оценка&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Статус&lt;/div&gt;&lt;div&gt;Посещаемость (часы)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CXYGANk-Z0LmwsJROQhh-13" edge="1" parent="1" source="CXYGANk-Z0LmwsJROQhh-3" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;" target="CXYGANk-Z0LmwsJROQhh-11" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="280" y="520" as="sourcePoint" />
+            <mxPoint x="747.76" y="625.8" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CXYGANk-Z0LmwsJROQhh-22" connectable="0" parent="CXYGANk-Z0LmwsJROQhh-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=70;" value="Прикрепить" vertex="1">
+          <mxGeometry relative="1" x="-0.0518" y="-1" as="geometry">
+            <mxPoint x="8" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CXYGANk-Z0LmwsJROQhh-14" edge="1" parent="1" source="CXYGANk-Z0LmwsJROQhh-11" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;startFill=1;" target="CXYGANk-Z0LmwsJROQhh-7" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="540" y="580" as="sourcePoint" />
+            <mxPoint x="470" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CXYGANk-Z0LmwsJROQhh-19" connectable="0" parent="CXYGANk-Z0LmwsJROQhh-14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=0;" value="Получить" vertex="1">
+          <mxGeometry relative="1" x="-0.0366" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CXYGANk-Z0LmwsJROQhh-15" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Свидетельство" vertex="1">
+          <mxGeometry height="90" width="160" x="280" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="CXYGANk-Z0LmwsJROQhh-16" parent="CXYGANk-Z0LmwsJROQhh-15" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="Ссылка на PDF документ&lt;div&gt;Дата выдачи&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CXYGANk-Z0LmwsJROQhh-17" edge="1" parent="1" source="CXYGANk-Z0LmwsJROQhh-15" style="fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;" target="CXYGANk-Z0LmwsJROQhh-11" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="350" y="650" as="sourcePoint" />
+            <mxPoint x="630" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CXYGANk-Z0LmwsJROQhh-18" connectable="0" parent="CXYGANk-Z0LmwsJROQhh-17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Сформировать" vertex="1">
+          <mxGeometry relative="1" x="0.0981" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
